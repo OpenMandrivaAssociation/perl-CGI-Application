@@ -18,6 +18,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTML::Template)
 BuildArch: 	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 %{module} is intended to make it easier to create sophisticated,
