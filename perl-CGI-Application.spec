@@ -1,7 +1,7 @@
 %define module	CGI-Application
 %define name	perl-%{module}
 %define version	4.11
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%{name}
 Version: 	%{version}
@@ -11,12 +11,10 @@ License: 	GPL or Artistic
 Group:		Development/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}/
-Requires: 	perl-HTML-Template
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTML::Template)
+Requires:	    perl(CGI)
+Requires: 	    perl(HTML::Template)
 BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
