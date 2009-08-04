@@ -1,5 +1,5 @@
 %define upstream_name	 CGI-Application
-%define upstream_version 4.21
+%define upstream_version 4.31
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Framework for building reusable web-applications
 License: 	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTML::Template)
