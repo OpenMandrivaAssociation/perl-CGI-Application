@@ -1,9 +1,9 @@
 %define upstream_name	 CGI-Application
-%define upstream_version 4.31
+%define upstream_version 4.50
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Framework for building reusable web-applications
 License: 	GPL+ or Artistic
