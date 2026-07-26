@@ -1,15 +1,13 @@
 %define upstream_name	 CGI-Application
-%define upstream_version 4.50
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	4.50
+Release:	5
 
 Summary:	Framework for building reusable web-applications
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ which, if followed, will make your web software easier to design,
 easier to document, easier to write, and easier to evolve.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 chmod 755 Examples/Mailform/mailform.cgi
 
 %build
@@ -61,9 +59,7 @@ make test
 
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 4.210.0-1mdv2010.0
 + Revision: 402995
-- rebuild using %%perl_convert_version
-
-* Sun Jan 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 4.21-1mdv2009.1
+- rebuild using %4.50 Sun Jan 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 4.21-1mdv2009.1
 + Revision: 324472
 - update to new version 4.21
 
